@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3113420B1A674523008801D8 /* LABData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3113420A1A674523008801D8 /* LABData.h */; };
+		3113420D1A674523008801D8 /* LABData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3113420C1A674523008801D8 /* LABData.m */; };
+		311342131A674523008801D8 /* libLABData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 311342071A674523008801D8 /* libLABData.a */; };
+		3113422B1A674566008801D8 /* DataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 311342241A674566008801D8 /* DataAccess.m */; };
+		3113422D1A674566008801D8 /* DBConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 311342291A674566008801D8 /* DBConnection.m */; };
+		311342311A6745AD008801D8 /* QueryParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 311342301A6745AD008801D8 /* QueryParam.m */; };
+		311342341A6747A4008801D8 /* PropertyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 311342331A6747A4008801D8 /* PropertyUtil.m */; };
+		311342371A680241008801D8 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 311342361A680241008801D8 /* libsqlite3.0.dylib */; };
+		3113459B1A768931008801D8 /* PCRUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3113422E1A6745AD008801D8 /* PCRUD.h */; };
+		3113459F1A768CEF008801D8 /* QueryParam.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3113422F1A6745AD008801D8 /* QueryParam.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		311342141A674523008801D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311341FF1A674523008801D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311342061A674523008801D8;
+			remoteInfo = LABData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		311342051A674523008801D8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				3113459F1A768CEF008801D8 /* QueryParam.h in CopyFiles */,
+				3113459B1A768931008801D8 /* PCRUD.h in CopyFiles */,
+				3113420B1A674523008801D8 /* LABData.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		311342071A674523008801D8 /* libLABData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLABData.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3113420A1A674523008801D8 /* LABData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LABData.h; path = LABData/LABData.h; sourceTree = SOURCE_ROOT; };
+		3113420C1A674523008801D8 /* LABData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABData.m; sourceTree = "<group>"; };
+		311342121A674523008801D8 /* LABDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LABDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		311342181A674523008801D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311342231A674566008801D8 /* DataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAccess.h; sourceTree = "<group>"; };
+		311342241A674566008801D8 /* DataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAccess.m; sourceTree = "<group>"; };
+		311342251A674566008801D8 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		311342281A674566008801D8 /* DBConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConnection.h; sourceTree = "<group>"; };
+		311342291A674566008801D8 /* DBConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBConnection.m; sourceTree = "<group>"; };
+		3113422E1A6745AD008801D8 /* PCRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCRUD.h; sourceTree = "<group>"; };
+		3113422F1A6745AD008801D8 /* QueryParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryParam.h; sourceTree = "<group>"; };
+		311342301A6745AD008801D8 /* QueryParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryParam.m; sourceTree = "<group>"; };
+		311342321A6747A4008801D8 /* PropertyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyUtil.h; sourceTree = "<group>"; };
+		311342331A6747A4008801D8 /* PropertyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyUtil.m; sourceTree = "<group>"; };
+		311342351A68005E008801D8 /* mydatabase.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = mydatabase.db; path = ../LABData/mydatabase.db; sourceTree = "<group>"; };
+		311342361A680241008801D8 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		311342041A674523008801D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311342371A680241008801D8 /* libsqlite3.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3113420F1A674523008801D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311342131A674523008801D8 /* libLABData.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		311341FE1A674523008801D8 = {
+			isa = PBXGroup;
+			children = (
+				311342361A680241008801D8 /* libsqlite3.0.dylib */,
+				311342091A674523008801D8 /* LABData */,
+				311342161A674523008801D8 /* LABDataTests */,
+				311342081A674523008801D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		311342081A674523008801D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				311342071A674523008801D8 /* libLABData.a */,
+				311342121A674523008801D8 /* LABDataTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		311342091A674523008801D8 /* LABData */ = {
+			isa = PBXGroup;
+			children = (
+				311342321A6747A4008801D8 /* PropertyUtil.h */,
+				311342331A6747A4008801D8 /* PropertyUtil.m */,
+				3113422E1A6745AD008801D8 /* PCRUD.h */,
+				3113422F1A6745AD008801D8 /* QueryParam.h */,
+				311342301A6745AD008801D8 /* QueryParam.m */,
+				311342231A674566008801D8 /* DataAccess.h */,
+				311342241A674566008801D8 /* DataAccess.m */,
+				311342251A674566008801D8 /* Database.h */,
+				311342281A674566008801D8 /* DBConnection.h */,
+				311342291A674566008801D8 /* DBConnection.m */,
+				3113420A1A674523008801D8 /* LABData.h */,
+				3113420C1A674523008801D8 /* LABData.m */,
+			);
+			path = LABData;
+			sourceTree = "<group>";
+		};
+		311342161A674523008801D8 /* LABDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				311342351A68005E008801D8 /* mydatabase.db */,
+				311342171A674523008801D8 /* Supporting Files */,
+			);
+			path = LABDataTests;
+			sourceTree = "<group>";
+		};
+		311342171A674523008801D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				311342181A674523008801D8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		311342061A674523008801D8 /* LABData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3113421B1A674523008801D8 /* Build configuration list for PBXNativeTarget "LABData" */;
+			buildPhases = (
+				311342031A674523008801D8 /* Sources */,
+				311342041A674523008801D8 /* Frameworks */,
+				311342051A674523008801D8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LABData;
+			productName = LABData;
+			productReference = 311342071A674523008801D8 /* libLABData.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		311342111A674523008801D8 /* LABDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3113421E1A674523008801D8 /* Build configuration list for PBXNativeTarget "LABDataTests" */;
+			buildPhases = (
+				3113420E1A674523008801D8 /* Sources */,
+				3113420F1A674523008801D8 /* Frameworks */,
+				311342101A674523008801D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				311342151A674523008801D8 /* PBXTargetDependency */,
+			);
+			name = LABDataTests;
+			productName = LABDataTests;
+			productReference = 311342121A674523008801D8 /* LABDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		311341FF1A674523008801D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Adrian Johnson Consultants Ltd";
+				TargetAttributes = {
+					311342061A674523008801D8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					311342111A674523008801D8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 311342021A674523008801D8 /* Build configuration list for PBXProject "LABData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 311341FE1A674523008801D8;
+			productRefGroup = 311342081A674523008801D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				311342061A674523008801D8 /* LABData */,
+				311342111A674523008801D8 /* LABDataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		311342101A674523008801D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		311342031A674523008801D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3113422D1A674566008801D8 /* DBConnection.m in Sources */,
+				311342311A6745AD008801D8 /* QueryParam.m in Sources */,
+				3113422B1A674566008801D8 /* DataAccess.m in Sources */,
+				311342341A6747A4008801D8 /* PropertyUtil.m in Sources */,
+				3113420D1A674523008801D8 /* LABData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3113420E1A674523008801D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		311342151A674523008801D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311342061A674523008801D8 /* LABData */;
+			targetProxy = 311342141A674523008801D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		311342191A674523008801D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3113421A1A674523008801D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3113421C1A674523008801D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3113421D1A674523008801D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3113421F1A674523008801D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LABDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		311342201A674523008801D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LABDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		311342021A674523008801D8 /* Build configuration list for PBXProject "LABData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311342191A674523008801D8 /* Debug */,
+				3113421A1A674523008801D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3113421B1A674523008801D8 /* Build configuration list for PBXNativeTarget "LABData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3113421C1A674523008801D8 /* Debug */,
+				3113421D1A674523008801D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3113421E1A674523008801D8 /* Build configuration list for PBXNativeTarget "LABDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3113421F1A674523008801D8 /* Debug */,
+				311342201A674523008801D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 311341FF1A674523008801D8 /* Project object */;
+}
